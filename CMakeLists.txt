@@ -47,6 +47,10 @@ Source/Utility/metro.cpp
 )
 
 
+if(CMAKE_CXX_COMPILER_ID MATCHES "MSVC")
+    target_compile_definitions(DaisySP INTERFACE _USE_MATH_DEFINES)
+endif()
+
 set_target_properties(DaisySP PROPERTIES PUBLIC
   CXX_STANDARD 14
   CXX_STANDARD_REQUIRED
