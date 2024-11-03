@@ -46,6 +46,7 @@ Source/Utility/dcblock.cpp
 Source/Utility/metro.cpp
 )
 
+target_compile_definitions(DaisySP INTERFACE _USE_MATH_DEFINES)
 
 set_target_properties(DaisySP PROPERTIES PUBLIC
   CXX_STANDARD 14
